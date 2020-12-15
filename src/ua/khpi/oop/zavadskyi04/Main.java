@@ -1,7 +1,7 @@
 package ua.khpi.oop.zavadskyi04;
 
 import java.util.Scanner;
- 
+
 
 public class Main {
   public static Helper help = new Helper(); 
@@ -9,9 +9,9 @@ public class Main {
      
      if(args.length>0)
      {
-       if(args[0].equals("-help"))
+       if(args[0].equals("-help")||args[0].equals("-h"))
         help.info_about_creater();
-       if (args[0].equals("-debug"))
+       if (args[0].equals("-debug")||args[0].equals("-d"))
         help.flag = true;
      }   
      Menu(); 
@@ -40,7 +40,7 @@ public static  void Menu()
     switch (command) {
     case "1": {
         
-      System.out.println("Input line: ");
+      System.out.println("¬ведите строку: ");
       str = scan.nextLine();
         
       break;

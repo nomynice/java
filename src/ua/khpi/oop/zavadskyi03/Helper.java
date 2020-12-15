@@ -10,7 +10,7 @@ public class Helper {
 private static int mean = 0;
 public static void start(StringBuilder ln) {
 	if(ln == null) {
-		throw new NullPointerException("line is null");
+		throw new NullPointerException("Пусто");
 	}
 	clottingSpace(ln);
 	ArrayList<StringBuilder> line = findArray(ln); 
@@ -56,6 +56,7 @@ static private StringBuilder clottingSpace(StringBuilder line) {
 		line.deleteCharAt(line.length()-1);
 	if(line.charAt(0)==' ')
 		line.deleteCharAt(0);
+	System.out.println("_________________________________");
 	System.out.println(line);
 	return line;
 }

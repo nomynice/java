@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.8" class="java.beans.XMLDecoder">
+ <array class="ua.khpi.oop.zavadskyi08.PointOfSale" length="3">
+  <void index="0">
+   <object class="ua.khpi.oop.zavadskyi08.PointOfSale" id="PointOfSale0">
+    <void property="name_point_of_sale">
+     <string>Кулиничи</string>
+    </void>
+    <void property="phone_number">
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <int>123456789</int>
+      </void>
+      <void method="add">
+       <int>463473537</int>
+      </void>
+      <void method="add">
+       <int>246241275</int>
+      </void>
+     </object>
+    </void>
+    <void property="specialization">
+     <string>Хлебобулочные изделия</string>
+    </void>
+    <void property="work_time">
+     <void method="put">
+      <string>monday</string>
+      <string>от 9 до 18</string>
+     </void>
+     <void method="put">
+      <string>tuesday</string>
+      <string>от 9 до 18</string>
+     </void>
+     <void method="put">
+      <string>friday</string>
+      <string>от 9 до 18</string>
+     </void>
+     <void method="put">
+      <string>saturday</string>
+      <string>от 10 до 15</string>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void index="1">
+   <object class="ua.khpi.oop.zavadskyi08.PointOfSale" id="PointOfSale1">
+    <void property="name_point_of_sale">
+     <string>AТБ</string>
+    </void>
+    <void property="phone_number">
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <int>237657355</int>
+      </void>
+      <void method="add">
+       <int>845685465</int>
+      </void>
+      <void method="add">
+       <int>214803234</int>
+      </void>
+     </object>
+    </void>
+    <void property="specialization">
+     <string>Супермаркет</string>
+    </void>
+    <void property="work_time">
+     <void method="put">
+      <string>monday</string>
+      <string>от 8 до 16</string>
+     </void>
+     <void method="put">
+      <string>wednesday</string>
+      <string>от 8 до 16</string>
+     </void>
+     <void method="put">
+      <string>friday</string>
+      <string>от 9 до 16</string>
+     </void>
+     <void method="put">
+      <string>saturday</string>
+      <string>от 10 до 12</string>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void index="2">
+   <object class="ua.khpi.oop.zavadskyi08.PointOfSale" id="PointOfSale2">
+    <void property="name_point_of_sale">
+     <string>Сomfy</string>
+    </void>
+    <void property="phone_number">
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <int>463473537</int>
+      </void>
+      <void method="add">
+       <int>746456421</int>
+      </void>
+     </object>
+    </void>
+    <void property="specialization">
+     <string>Магазин електротехники</string>
+    </void>
+    <void property="work_time">
+     <void method="put">
+      <string>monday</string>
+      <string>от 9 до 18</string>
+     </void>
+     <void method="put">
+      <string>tuesday</string>
+      <string>от 9 до 18</string>
+     </void>
+     <void method="put">
+      <string>friday</string>
+      <string>от 9 до 18</string>
+     </void>
+     <void method="put">
+      <string>saturday</string>
+      <string>от 10 до 15</string>
+     </void>
+    </void>
+   </object>
+  </void>
+ </array>
+</java>

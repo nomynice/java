@@ -64,9 +64,9 @@ public class PointOfSale {
 	public void Show()
 	 {
 			System.out.println("Название торговой точки - "+ name_point_of_sale +"\r\n" + 
-					"Номера телефонов \n"+ toString_phone_number() + "\r" + 
-					"Специализация " + specialization +
-					"\nРобочее время "+ toString_work_time() + "\r\n");
+					"Контактный номер телефона \n"+ toString_phone_number() + "\r" + 
+					"Специализация - " + specialization +
+					"\nРобочее время : "+ toString_work_time() + "\r\n");
 		 
 	 }
 }

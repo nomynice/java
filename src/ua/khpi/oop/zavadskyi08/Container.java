@@ -14,15 +14,15 @@ public class Container {
 	{ 
 		int size = array.length;
 		Scanner scan = new Scanner(System.in);
-		System.out.println("¬ведите название торговой точки");
+		System.out.println("¬ведите название торговой точки :");
 		String name_point_of_sale = scan.nextLine();
-		System.out.println("¬ведите номер телефону");
+		System.out.println("¬ведите номер телефона : ");
 		int number = scan.nextInt();
-		System.out.println("¬ведите специализацию торговой точки");
+		System.out.println("¬ведите специализацию торговой точки :");
 		String specialty =  scan.nextLine();  
-		System.out.println("¬ведите день недели в который точка работает");
+		System.out.println("¬ведите дни недели в которые точка работает");
 		String day = scan.nextLine(); 
-		System.out.println("¬ведите в какой интервал времени работает точка");
+		System.out.println("¬ведите  интервал времени работы точки");
 		String time = scan.nextLine(); 
 		LinkedHashMap<String, String> work_time = new LinkedHashMap<String, String>();
 		work_time.put(day,time);
@@ -57,8 +57,8 @@ public class Container {
 	
 	public void Show()
 	{
-		for (PointOfSale carsShop : array) {
-			carsShop.Show();
+		for (PointOfSale Name_point_of_sale : array) {
+			Name_point_of_sale.Show();
 		}
 	}
 	

@@ -1,5 +1,7 @@
 package ua.khpi.oop.zavadskyi04;
 
+
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
@@ -31,7 +33,14 @@ public class Helper {
       
     for (int i = 0; i<length;i++) {
       if(ln.charAt(i)==' ')
-      IndexSpace.add(i);
+      {
+        
+        if(flag)
+            System.out.println("Індекс пробела в масиве" + i);
+          
+        IndexSpace.add(i);  
+      }
+       
     }
     if(flag)
       System.out.println("В строке только одно слово");
@@ -45,11 +54,12 @@ public class Helper {
     IndexSpace.add(length);
     for(int i=1;i<IndexSpace.size();i++) {
       
-      if(ln.substring(IndexSpace.get(i-1)+1, IndexSpace.get(i))!="")
+      if(ln.substring(IndexSpace.get(i-1)+1, IndexSpace.get(i))!="") {
         if(flag)
           System.out.println("Распределение слов по местам в списке");
-      line.add(new StringBuilder(ln.substring(IndexSpace.get(i-1)+1, IndexSpace.get(i))));
-     }
+       line.add(new StringBuilder(ln.substring(IndexSpace.get(i-1)+1, IndexSpace.get(i))));
+      }
+    }
     }
     return line;
   }
@@ -65,6 +75,8 @@ public class Helper {
     System.out.println("Ввести текст. У тексті кожну літеру замінити її номером в алфавіті. Вивести результат наступним чином: в одному рядку друкувати текст з двома пропусками між буквами, в наступному рядку під кожною буквою друкувати її номер.");
     System.out.println("Главный метод - 'start' ");
     System.out.println("Метод обрабатывает строку и вызывает нужные методы для определение номера символа в алфавите");
+
+
 }
   
   
@@ -75,13 +87,13 @@ public class Helper {
     { 
       if(line.charAt(i)==' '&&line.charAt(i+1)==' ') {
         if(flag)
-          System.out.println("Обнаружен лишний пробел");
+          System.out.println("Обнаружен лишний пробел, "+"его индекс"+i+1);
         line.deleteCharAt(i+1);
         i--;
       }
     }
     if(flag)
-      System.out.println("проверка пробелов в конце или начале строки");
+      System.out.println("Проверка пробелов в конце или начале строки");
     if(line.charAt(line.length()-1)==' ')
       line.deleteCharAt(line.length()-1);
     if(line.charAt(0)==' ')
@@ -99,8 +111,13 @@ public class Helper {
     if(flag)
       System.out.println("Подсчет общего количества символов");
     for (StringBuilder strB: line) {
+      if(flag)
+        System.out.println("Длинна строки "+strB+" составила "+strB.length());
        size += strB.length();
     }
+    if(flag)
+      System.out.println("Общее количество символов "+size);
+    
     count = size;
     int[] array_numbers = new int [count];
     int i=0; 
@@ -114,14 +131,14 @@ public class Helper {
         if((int)el >=97 && (int)el<= 122)
         {  
           if(flag)
-            System.out.println("Найдено букву в малом регистре");
+            System.out.println("Найдено букву в малом регистре"+" Буква = " + el);
           array_numbers[i] = (int)el;
           array_numbers[i] -=96; 
         }    
         else if((int)el >=65 && (int)el<= 90)
         {  
           if(flag)
-            System.out.println("Найдено букву в большом регистре");
+            System.out.println("Найдено букву в большом регистре"+" Буква = " + el);
           array_numbers[i] = (int)el;
           array_numbers[i] -=64; 
         }    
@@ -132,7 +149,7 @@ public class Helper {
     i=0;
     char[] arrALL = new char[count]; 
     if(flag)
-      System.out.println("Перевод всей строки в масив для специально");
+      System.out.println("Перевод всей строки в масив");
     for (StringBuilder strB : line) {
       size = strB.length();
       strB.getChars(0, size, arrALL, i);
@@ -154,4 +171,3 @@ public class Helper {
   
  
 }
-    

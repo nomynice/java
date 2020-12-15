@@ -5,7 +5,7 @@ import java.util.Iterator;
 public class Main { 
 	  
 	public static void main(String[] args ) {
-		Container container = new Container("Hi user.","This lab aims to show how I can deal with the container development problem.","All this is needed so that I can keep the lines intact."); 
+		Container container = new Container("Привет, пользователь.", "Цель этой лабораторной работы - показать, как я могу справиться с проблемой разработки контейнеров», «Все это необходимо, чтобы я мог сохранить строки в целости."); 
 		 Iterator<String> it = container.getIterator() ;
 		for (;it.hasNext();) 
 			System.out.println(it.next());
@@ -13,16 +13,16 @@ public class Main {
 		while (it.hasNext())
 			System.out.println(it.next());
 		
-		System.out.println("Removing the first similar item from the container and displaying it using the method toString :");
-		System.out.println("Result checking - " + container.remove("Hi user."));
+		System.out.println("Удаление первого аналогичного элемента из контейнера и его отображение с помощью метода toString:");
+		System.out.println("Проверка результатов - " + container.remove("Привет пользователь."));
 		System.out.println(container.toString());
-		System.out.println("Size of the container - " + container.size());
-		System.out.println("Contains test with string: " + "All this is needed so that I can keep strings with palindromes safe and sound - " + container.contains("All this is needed so that I can keep strings with palindromes safe and sound."));
-		System.out.println("Add one string in my conteiner");
-		container.add("adda wad ss.");
-		System.out.println("Show : " + container.toString());
-		System.out.println("\nContains all text - " + container.containsAll(new Container("adda wad ss.", "This lab aims to show how I can deal with the container development problem.","All this is needed so that I can keep strings with palindromes safe and sound.")));
-		System.out.println("Clearing the container");
+		System.out.println("Размер контейнера - " + container.size());
+		System.out.println("Содержит текст со строкой :" + " Все это нужно для того, чтобы строки с палиндромами были в целости и сохранности - " + container.contains("Все это нужно для того, чтобы я мог сохранить в целости и сохранности строки с палиндромами."));
+		System.out.println("Добавьте одну строку в мой контейнер");
+		container.add("Добавилось это.");
+		System.out.println("Вид : " + container.toString());
+		System.out.println("\nСодержит весь текст - " + container.containsAll(new Container("adda wad ss.", "Цель этой лабораторной работы - показать, как я могу решить проблему разработки контейнеров.","Все это нужно для того, чтобы я мог сохранить в целости и сохранности строки с палиндромами.")));
+		System.out.println("Очистка контейнера");
 		container.clear();
 		
 		
